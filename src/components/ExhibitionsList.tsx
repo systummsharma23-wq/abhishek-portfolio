@@ -151,7 +151,7 @@ export const ExhibitionsList: React.FC<ExhibitionsListProps> = ({
           </div>
 
           <a
-            href="mailto:nirajasharma9829871260@gmail.com?subject=Press%20Kit%20Request"
+            href="mailto:systummsharma23@gmail.com?subject=Thumbnail%20Catalog%20Request"
             className="px-6 py-3 rounded-full bg-[#050505] text-[#F5F4EF] hover:bg-[#F5A623] hover:text-[#050505] font-grotesk font-bold text-xs uppercase tracking-wider transition-colors flex-shrink-0"
           >
             Request Catalog PDF

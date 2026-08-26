@@ -128,7 +128,7 @@ export default function App() {
           onSelectProjectById={handleSelectProjectById}
         />
 
-        {/* 5. Contact Section with WhatsApp & Direct Email */}
+        {/* 5. Contact Section with Direct Email */}
         <ContactSection profile={profile} />
       </main>
 
