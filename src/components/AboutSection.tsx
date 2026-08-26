@@ -201,16 +201,16 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ profile, onOpenConta
             {activeTab === 'background' && (
               <div className="space-y-3 text-sm text-white/80 animate-in fade-in duration-300">
                 <div className="flex justify-between items-baseline border-b border-white/10 pb-2">
-                  <span className="font-bold text-white">Independent Practice</span>
-                  <span className="text-xs font-mono text-white/50">2022 — Present</span>
+                  <span className="font-bold text-white">Full-Time Creator Thumbnail Specialist</span>
+                  <span className="text-xs font-mono text-white/50">2023 — Present</span>
                 </div>
                 <div className="flex justify-between items-baseline border-b border-white/10 pb-2">
-                  <span className="font-bold text-white">Senior Visual Designer — Studio Koto</span>
-                  <span className="text-xs font-mono text-white/50">2020 — 2022</span>
+                  <span className="font-bold text-white">Graphic & YouTube Visual Designer</span>
+                  <span className="text-xs font-mono text-white/50">2021 — 2023</span>
                 </div>
                 <div className="flex justify-between items-baseline border-b border-white/10 pb-2">
-                  <span className="font-bold text-white">BFA Graphic Design & Typography</span>
-                  <span className="text-xs font-mono text-white/50">Tokyo University of the Arts</span>
+                  <span className="font-bold text-white">High-CTR Click Psychology & Retouching</span>
+                  <span className="text-xs font-mono text-white/50">50M+ Views Driven</span>
                 </div>
               </div>
             )}

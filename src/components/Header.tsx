@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowUpRight, Sparkles } from 'lucide-react';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { DesignerProfile } from '../types';
 
 interface HeaderProps {
   profile: DesignerProfile;
   onOpenContact: () => void;
-  onOpenCustomizer?: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ profile, onOpenContact, onOpenCustomizer }) => {
+export const Header: React.FC<HeaderProps> = ({ profile, onOpenContact }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -98,30 +97,10 @@ export const Header: React.FC<HeaderProps> = ({ profile, onOpenContact, onOpenCu
             <span>Let's Talk</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
           </button>
-
-          {onOpenCustomizer && (
-            <button
-              id="header-customizer-btn"
-              onClick={onOpenCustomizer}
-              title="Edit Profile & Images"
-              className="p-2.5 rounded-full border border-[#050505]/10 hover:border-[#050505]/30 bg-white/80 hover:bg-white text-[#050505]/70 transition-all cursor-pointer"
-            >
-              <Sparkles className="w-3.5 h-3.5" />
-            </button>
-          )}
         </div>
 
         {/* Mobile menu hamburger button */}
         <div className="flex sm:hidden items-center gap-2">
-          {onOpenCustomizer && (
-            <button
-              onClick={onOpenCustomizer}
-              className="p-2 rounded-full border border-[#050505]/10 bg-white text-[#050505]/80"
-              title="Edit Content"
-            >
-              <Sparkles className="w-4 h-4" />
-            </button>
-          )}
           <button
             id="mobile-menu-toggle"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

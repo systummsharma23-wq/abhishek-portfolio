@@ -19,15 +19,15 @@ export const Hero: React.FC<HeroProps> = ({ profile, onExploreClick, onOpenConta
         <div className="flex items-center gap-3">
           <div className="w-8 sm:w-12 h-[1px] bg-[#050505]" />
           <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#050505]">
-            Visual Director — Studio 2026
+            YouTube Thumbnail Designer
           </span>
           <span className="h-1 w-1 rounded-full bg-[#F5A623]" />
           <span className="text-[10px] font-mono tracking-widest text-[#050505]/50 uppercase hidden sm:inline-block">
-            [ 01 // OVERVIEW ]
+            [ PORTFOLIO ARCHIVE ]
           </span>
         </div>
         <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#050505]/50 hidden sm:inline-block">
-          NY / LDN / TYO ARCHIVE
+          HIGH-CTR PACKAGING
         </span>
       </div>
 

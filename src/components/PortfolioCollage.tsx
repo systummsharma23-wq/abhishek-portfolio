@@ -1,18 +1,16 @@
 import React, { useState } from 'react';
-import { ArrowUpRight, Plus, Eye, Sparkles, Filter, LayoutGrid, Layers, TrendingUp, Youtube } from 'lucide-react';
+import { ArrowUpRight, Eye, LayoutGrid, Layers, TrendingUp, Youtube } from 'lucide-react';
 import { Project } from '../types';
 import { ThumbnailRenderer } from './ThumbnailRenderer';
 
 interface PortfolioCollageProps {
   projects: Project[];
   onSelectProject: (project: Project) => void;
-  onAddNewProject?: () => void;
 }
 
 export const PortfolioCollage: React.FC<PortfolioCollageProps> = ({
   projects,
   onSelectProject,
-  onAddNewProject,
 }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [viewMode, setViewMode] = useState<'bento' | 'grid'>('grid');
@@ -56,7 +54,7 @@ export const PortfolioCollage: React.FC<PortfolioCollageProps> = ({
           </span>
         </div>
 
-        {/* View mode toggle & Add project button */}
+        {/* View mode toggle */}
         <div className="flex items-center gap-3">
           <div className="flex items-center bg-[#E9E8E2] p-1 rounded-full border border-black/10">
             <button
@@ -82,16 +80,6 @@ export const PortfolioCollage: React.FC<PortfolioCollageProps> = ({
               <span>Bento View</span>
             </button>
           </div>
-
-          {onAddNewProject && (
-            <button
-              onClick={onAddNewProject}
-              className="flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#F5A623] hover:bg-[#050505] hover:text-[#F5F4EF] text-[#050505] text-[10px] font-grotesk font-bold uppercase tracking-wider transition-all shadow-sm cursor-pointer"
-            >
-              <Plus className="w-3.5 h-3.5" />
-              <span>Add Project</span>
-            </button>
-          )}
         </div>
       </div>
 
