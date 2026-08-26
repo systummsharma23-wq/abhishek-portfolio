@@ -17,7 +17,17 @@ export default function App() {
   const [profile, setProfile] = useState<DesignerProfile>(() => {
     const saved = localStorage.getItem('as_profile');
     if (saved) {
-      try { return JSON.parse(saved); } catch (e) { /* ignore */ }
+      try {
+        const parsed = JSON.parse(saved);
+        if (parsed) {
+          // Ensure new email is applied
+          parsed.email = 'systummsharma23@gmail.com';
+          parsed.socials = [
+            { name: 'Direct Email', handle: 'systummsharma23@gmail.com', url: 'mailto:systummsharma23@gmail.com' }
+          ];
+          return parsed;
+        }
+      } catch (e) { /* ignore */ }
     }
     return INITIAL_PROFILE;
   });

@@ -68,13 +68,6 @@ export const Hero: React.FC<HeroProps> = ({ profile, onExploreClick, onOpenConta
                 <span>Explore Portfolio</span>
                 <ArrowDownRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5" />
               </button>
-
-              <button
-                onClick={onOpenContact}
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-[#050505]/20 hover:border-[#050505] bg-transparent text-[#050505] font-grotesk font-bold text-[10px] uppercase tracking-[0.2em] transition-all hover:bg-[#050505]/5 cursor-pointer"
-              >
-                <span>Commission</span>
-              </button>
             </div>
 
             {/* Bento Stats Block */}

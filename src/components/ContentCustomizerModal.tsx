@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Check, Copy, Sparkles, Image, User, Layers, RefreshCw } from 'lucide-react';
+import { X, Check, Copy, Sparkles, Image, User, Layers, RefreshCw, Upload } from 'lucide-react';
 import { DesignerProfile, Project } from '../types';
 
 interface ContentCustomizerModalProps {

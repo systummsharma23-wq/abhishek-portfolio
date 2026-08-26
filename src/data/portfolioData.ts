@@ -44,15 +44,11 @@ export const INITIAL_PROFILE: DesignerProfile = {
       sublabel: "Fast delivery"
     }
   ],
-  email: "nirajasharma9829871260@gmail.com",
+  email: "systummsharma23@gmail.com",
   portraitYellowBg: "https://i.ibb.co/TMmYk5fG/Whats-App-Image-2026-08-25-at-17-52-37.jpg",
   aboutMonochromePortrait: "https://i.ibb.co/TMmYk5fG/Whats-App-Image-2026-08-25-at-17-52-37.jpg",
   socials: [
-    { name: "WhatsApp", handle: "+91 (Direct Chat)", url: "https://wa.me/919829871260" },
-    { name: "Email", handle: "nirajasharma9829871260@gmail.com", url: "mailto:nirajasharma9829871260@gmail.com" },
-    { name: "Instagram", handle: "@abhishek.thumbnails", url: "https://instagram.com" },
-    { name: "Behance", handle: "abhisheksharma", url: "https://behance.net" },
-    { name: "YouTube", handle: "Abhishek Sharma", url: "https://youtube.com" }
+    { name: "Direct Email", handle: "systummsharma23@gmail.com", url: "mailto:systummsharma23@gmail.com" }
   ]
 };
 

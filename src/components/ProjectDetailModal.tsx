@@ -276,20 +276,11 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
 
           <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
             <a
-              href="https://wa.me/919829871260?text=Hi%20Abhishek,%20I%20saw%20your%20portfolio%20and%20want%20to%20hire%20you%20for%20a%20thumbnail%20project!"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#25D366] text-black font-grotesk font-bold text-xs uppercase tracking-wider hover:bg-white transition-all shadow-md"
-            >
-              <MessageSquare className="w-4 h-4" />
-              <span>WhatsApp Direct</span>
-            </a>
-            <a
-              href="mailto:nirajasharma9829871260@gmail.com?subject=Thumbnail%20Project%20Inquiry"
-              className="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#F5A623] text-black font-grotesk font-bold text-xs uppercase tracking-wider hover:bg-white transition-all shadow-md"
+              href="mailto:systummsharma23@gmail.com?subject=Thumbnail%20Project%20Inquiry"
+              className="flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-[#F5A623] text-black font-grotesk font-bold text-xs uppercase tracking-wider hover:bg-white transition-all shadow-md"
             >
               <Mail className="w-4 h-4" />
-              <span>Email Abhishek</span>
+              <span>Email Abhishek (Direct Inquiry)</span>
             </a>
           </div>
         </div>

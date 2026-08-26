@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { ArrowUp, Heart, Globe } from 'lucide-react';
+import React from 'react';
+import { ArrowUp } from 'lucide-react';
 import { DesignerProfile } from '../types';
 
 interface FooterProps {
@@ -7,26 +7,6 @@ interface FooterProps {
 }
 
 export const Footer: React.FC<FooterProps> = ({ profile }) => {
-  const [currentTime, setCurrentTime] = useState<string>('');
-
-  useEffect(() => {
-    const updateTime = () => {
-      const now = new Date();
-      setCurrentTime(
-        now.toLocaleTimeString('en-US', {
-          timeZone: 'Asia/Tokyo',
-          hour: '2-digit',
-          minute: '2-digit',
-          second: '2-digit',
-          hour12: true,
-        })
-      );
-    };
-    updateTime();
-    const timer = setInterval(updateTime, 1000);
-    return () => clearInterval(timer);
-  }, []);
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -42,7 +22,7 @@ export const Footer: React.FC<FooterProps> = ({ profile }) => {
           {/* Brand Monogram */}
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center font-display font-bold text-xs tracking-wider">
-              {profile.monogram || 'NS'}
+              {profile.monogram || 'AS'}
             </div>
             <div>
               <span className="text-xs font-bold uppercase font-grotesk tracking-tight text-white block">
@@ -54,17 +34,10 @@ export const Footer: React.FC<FooterProps> = ({ profile }) => {
             </div>
           </div>
 
-          {/* Live Studio Clock & Location */}
-          <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-white/80">
-            <Globe className="w-3.5 h-3.5 text-[#F5A623] animate-pulse" />
-            <span>TOKYO STUDIO (JST):</span>
-            <span className="text-[#F5A623] font-bold">{currentTime || '05:41 PM'}</span>
-          </div>
-
           {/* Back to Top */}
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-2 text-xs font-grotesk font-bold uppercase tracking-wider text-white/70 hover:text-[#F5A623] transition-colors group"
+            className="flex items-center gap-2 text-xs font-grotesk font-bold uppercase tracking-wider text-white/70 hover:text-[#F5A623] transition-colors group cursor-pointer"
           >
             <span>Back To Top</span>
             <div className="w-7 h-7 rounded-full bg-white/10 group-hover:bg-[#F5A623] group-hover:text-black flex items-center justify-center transition-all">
@@ -77,9 +50,9 @@ export const Footer: React.FC<FooterProps> = ({ profile }) => {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] font-mono text-white/40">
           <p>© {new Date().getFullYear()} {profile.name}. ALL RIGHTS RESERVED.</p>
           <div className="flex items-center gap-6">
-            <span>SET IN HELVETICA GROTESK & SYNE</span>
+            <span>DIRECT CONTACT: {profile.email}</span>
             <span>•</span>
-            <span>ART-DIRECTED ARCHIVE</span>
+            <span>GRAPHIC & THUMBNAIL DESIGN ARCHIVE</span>
           </div>
         </div>
 
